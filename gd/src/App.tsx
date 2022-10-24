@@ -6,6 +6,7 @@ import "./assets copy/css/styles.css";
 import "./assets copy/js/smoothproducts.js";
 
 import Detail from "./page/Detail";
+import Search from "./page/Search";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -13,10 +14,11 @@ function App() {
     <div className="App">
       <main>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="product" element={<Layout />}>
             <Route path="detail" element={<Detail />} />
+            <Route path="search" element={<Search />} />
           </Route>
-          <Route path="/" element={<Home />} />
         </Routes>
       </main>
     </div>
