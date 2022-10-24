@@ -2,26 +2,17 @@ import React from "react";
 
 type Props = {};
 
-const Header = (props: Props) => {
+const Header2 = (props: Props) => {
   return (
     <div id="main-wrapper">
-      {/* <!-- Start Navigation --> */}
-      <div className="header header-transparent change-logo">
+      <div className="header header-light dark-text">
         <div className="container">
           <nav id="navigation" className="navigation navigation-landscape">
             <div className="nav-header">
-              <a className="nav-brand static-logo" href="#">
+              <a className="nav-brand" href="#">
                 <img
                   src="https://res.cloudinary.com/dgeqw8b5i/image/upload/v1666583733/gd/logo-light_gmshg5.png"
                   className="logo"
-                  alt=""
-                />
-              </a>
-              <a className="nav-brand fixed-logo" href="#">
-                <img
-                  src="https://res.cloudinary.com/dgeqw8b5i/image/upload/v1666583733/gd/logo-light_gmshg5.png"
-                  className="logo"
-                  alt=""
                 />
               </a>
               <div className="nav-toggle" />
@@ -230,29 +221,23 @@ const Header = (props: Props) => {
           </nav>
         </div>
       </div>
-      {/* <!-- ======================= Home Banner ======================== --> */}
+      {/* ======================= Searchbar Banner ======================== */}
       <div
-        className="home-banner margin-bottom-0"
+        className="py-5"
         style={{
-          background:
-            "#00ab46 url(https://res.cloudinary.com/dgeqw8b5i/image/upload/v1666583728/gd/banner-5_rnetjw.jpg) no-repeat ",
+          background: "#03343b url(assets/img/landing-bg.png) no-repeat",
         }}
-        data-overlay={4}
+        data-overlay={0}
       >
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-xl-11 col-lg-12 col-md-12 col-sm-12 col-12">
-              <div className="banner_caption text-center mb-5">
-                <h1 className="banner_title ft-bold mb-1">
-                  Explore More Than 10K+ Jobs
-                </h1>
-                <p className="fs-md ft-medium">
-                  Hi Friends, Your Dream Jobs is Waiting in Your Local City
-                </p>
+            <div className="col-xl-8 col-lg-10 col-md-12 col-sm-12 col-12">
+              <div className="banner_caption text-center mb-2">
+                <h1 className="ft-bold mb-4">The Most Exciting Jobs</h1>
               </div>
               <form className="bg-white rounded p-1">
                 <div className="row no-gutters">
-                  <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                  <div className="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
                     <div className="form-group mb-0 position-relative">
                       <input
                         type="text"
@@ -262,30 +247,17 @@ const Header = (props: Props) => {
                       <i className="bnc-ico lni lni-search-alt" />
                     </div>
                   </div>
-                  <div className="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                  <div className="col-xl-5 col-lg-4 col-md-4 col-sm-12 col-12">
                     <div className="form-group mb-0 position-relative">
                       <input
                         type="text"
                         className="form-control lg left-ico"
-                        placeholder="Job Title, Keyword or Company"
+                        placeholder="Location or Zip Code"
                       />
                       <i className="bnc-ico lni lni-target" />
                     </div>
                   </div>
-                  <div className="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                    <div className="form-group mb-0 position-relative">
-                      <select className="custom-select lg b-0">
-                        <option value={1}>Choose Location</option>
-                        <option value={2}>Los Angeles</option>
-                        <option value={3}>San Francisco</option>
-                        <option value={4}>San Diego</option>
-                        <option value={5}>Philadelphia</option>
-                        <option value={6}>Denver</option>
-                        <option value={7}>Houston</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                  <div className="col-xl-2 col-lg-3 col-md-3 col-sm-12 col-12">
                     <div className="form-group mb-0 position-relative">
                       <button
                         className="btn full-width custom-height-lg theme-bg text-white fs-md"
@@ -301,92 +273,10 @@ const Header = (props: Props) => {
           </div>
         </div>
       </div>
-      {/* Log In Modal */}
-      <div
-        className="modal fade"
-        id="login"
-        tabIndex={-1}
-        role="dialog"
-        aria-labelledby="loginmodal"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog modal-xl login-pop-form" role="document">
-          <div className="modal-content" id="loginmodal">
-            <div className="modal-headers">
-              <button
-                type="button"
-                className="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span className="ti-close" />
-              </button>
-            </div>
-            <div className="modal-body p-5">
-              <div className="text-center mb-4">
-                <h2 className="m-0 ft-regular">Login</h2>
-              </div>
-              <form>
-                <div className="form-group">
-                  <label>User Name</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Username*"
-                  />
-                </div>
-                <div className="form-group">
-                  <label>Password</label>
-                  <input
-                    type="password"
-                    className="form-control"
-                    placeholder="Password*"
-                  />
-                </div>
-                <div className="form-group">
-                  <div className="d-flex align-items-center justify-content-between">
-                    <div className="flex-1">
-                      <input
-                        id="dd"
-                        className="checkbox-custom"
-                        name="dd"
-                        type="checkbox"
-                      />
-                      <label htmlFor="dd" className="checkbox-custom-label">
-                        Remember Me
-                      </label>
-                    </div>
-                    <div className="eltio_k2">
-                      <a href="#" className="theme-cl">
-                        Lost Your Password?
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="form-group">
-                  <button
-                    type="submit"
-                    className="btn btn-md full-width theme-bg text-light fs-md ft-medium"
-                  >
-                    Login
-                  </button>
-                </div>
-                <div className="form-group text-center mb-0">
-                  <p className="extra">
-                    Not a member?
-                    <a href="#et-register-wrap" className="text-dark">
-                      Register
-                    </a>
-                  </p>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* End Modal */}
+      {/* ======================= Searchbar Banner ======================== --
+       */}
     </div>
   );
 };
 
-export default Header;
+export default Header2;

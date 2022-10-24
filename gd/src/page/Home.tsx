@@ -1,11 +1,12 @@
 import React from "react";
+import Header from "../component/Header";
 
 type Props = {};
 
 const Home = (props: Props) => {
   return (
     <div>
-      {" "}
+      <Header />
       {/* ======================= Job List ======================== */}
       <section className="middle">
         <div className="container">
