@@ -38,9 +38,9 @@ const Header = (props: Props) => {
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="dashboard-post-job.html"
+                    <a                   
                       className="crs_yuo12 w-auto text-white theme-bg"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal" 
                     >
                       <span className="embos_45">
                         <i className="fas fa-plus-circle mr-1 mr-1" />

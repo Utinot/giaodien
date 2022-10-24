@@ -212,7 +212,8 @@ const Header2 = (props: Props) => {
                   </a>
                 </li>
                 <li className="add-listing theme-bg">
-                  <a href="dashboard-post-job.html">
+                  <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  >
                     <i className="lni lni-circle-plus mr-1" /> Post a Job
                   </a>
                 </li>
